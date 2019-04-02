@@ -210,6 +210,14 @@
          This flag controls whether the {@link Display#FLAG_SUPPORTS_PROTECTED_BUFFERS}
          flag is set for wifi displays.
     -->
+ <!-- ImsService package name to bind to by default. If none is specified in an overlay, an
+         empty string is passed in -->
+
+    <string name="config_ims_package">org.codeaurora.ims</string>
+
+    <!-- Flag specifying whether or not IMS will use the dynamic ImsResolver -->
+    <bool name="config_dynamic_bind_ims">false</bool>
+
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
